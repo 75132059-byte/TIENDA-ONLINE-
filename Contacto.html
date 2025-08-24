@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Moda y Estilo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffd6e7; /* 🎨 Fondo rosa pastel */
+      color: #333;
+    }
+    header {
+      background: #111;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      max-width: 600px;
+      margin: 30px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    h2 {
+      text-align: center;
+      color: #444;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    label {
+      font-weight: bold;
+    }
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+    button {
+      padding: 12px;
+      background-color: #e60073; /* Botón rosado fuerte */
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #c70061;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #111;
+      color: white;
+      margin-top: 30px;
+    }
+    a {
+      color: #e60073;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Contacto</h1>
+  </header>
+
+<main>
+    <h2>📩 Escríbenos</h2>
+    <form onsubmit="enviarFormulario(event)">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" placeholder="907450159" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+    <br>
+  <a href="Index.html">⬅ Volver a la página principal</a>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Moda y Estilo - Todos los derechos reservados</p>
+    <p>📞 Contáctanos también al <strong>+51 987 654 321</strong></p>
+  </footer>
+
+  <script>
+    function enviarFormulario(event) {
+      event.preventDefault(); // evita recargar la página
+      alert("✅ Tu mensaje ha sido enviado con éxito. ¡Gracias por contactarnos!");
+      window.location.href = "index.html"; // redirige al inicio
+    }
+  </script>
+
+</body>
+</html>
+

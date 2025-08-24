@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Ropa - Moda y Estilo</title>
+  <style>
+    /* ====== ESTILOS GENERALES ====== */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fef6f9; /* 🎨 fondo pastel */
+      color: #333;
+    }
+
+    header {
+      background: #f8c8dc; /* pastel rosado */
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+      color: #222;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 18px;
+      color: #222;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #e75480;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 28px;
+      color: #111;
+    }
+
+    /* ====== SECCIÓN PRODUCTOS ====== */
+    .productos {
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      width: 250px;
+      background: #fff;
+      padding: 15px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .card h3 {
+      margin: 10px 0;
+      font-size: 20px;
+      color: #111;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .btn-comprar {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #e75480;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .btn-comprar:hover {
+      background: #d64570;
+    }
+
+    /* ====== FOOTER ====== */
+    footer {
+      text-align: center;
+      background: #f8c8dc;
+      padding: 15px;
+      margin-top: 30px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header>
+    <h1>👗 Tienda de Ropa</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="DEPORTIVA.html">Ropa Deportiva</a>
+      <a href="Tendencia.html"><strong>Tendencia</strong></a>
+      <a href="Contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- SECCIÓN DE PRODUCTOS -->
+  <h2>Nuestros Productos</h2>
+  <section class="productos">
+    <div class="card">
+      <img src="1.jpg" alt="Vestido elegante">
+      <h3>Vestido Elegante</h3>
+      <p>Perfecto para ocasiones especiales. Disponible en varias tallas.</p>
+      <a href="#" class="btn-comprar">Comprar</a>
+    </div>
+
+    <div class="card">
+      <img src="7.jpg" alt="Conjunto casual">
+      <h3>Conjunto Casual</h3>
+      <p>Ideal para un look fresco y cómodo del día a día.</p>
+      <a href="#" class="btn-comprar">Comprar</a>
+    </div>
+
+    <div class="card">
+      <img src="6.jpg" alt="Look Urbano">
+      <h3>Look Urbano</h3>
+      <p>Estilo moderno inspirado en la moda callejera.</p>
+      <a href="#" class="btn-comprar">Comprar</a>
+    </div>
+  </section>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>&copy; 2025 Tienda de Ropa - Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
